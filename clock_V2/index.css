@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Special+Elite&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#text-data{
+    font-family: 'Norican', cursive;
+    letter-spacing: 0.2em;
+    font-size: 50px;
+    color: rgb(205, 25, 225);
+    text-align: center;
+    margin-top: 20px;
+}
+
+#loader {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 2;
+    background: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1px;
+}
+
+#object {
+    width: 5em;
+    height: 5em;
+    position: relative;
+    align-self: flex-start;
+    background-color: red;
+    border-radius: 20%;
+    transform: translateX(15vw) rotate(0deg);
+    animation: load 1.5s linear 0.1s both 1;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+        transform: translateX(15vw) rotate(0deg);
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(85vw) rotate(360deg);
+    }
+}
+
+
+
+@keyframes load2 {
+    0% {
+        opacity: 100%;
+        height: 100vh;
+    }
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
+
+main {
+    background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#date {
+    font-family: 'Lobster Two', cursive;
+
+    font-size: 2em;
+    color: #2145ff;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+#days {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    font-weight:bolder;
+    color: #ff3f6a;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
+#clock {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    color: #a520e3;
+    font-family: "Special Elite", cursive;
+    font-weight: bolder;
+}

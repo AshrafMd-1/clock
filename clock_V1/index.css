@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Special+Elite&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock {
+  font-size: 2.5em;
+  letter-spacing: 0.2em;
+  color: #a520e3;
+  font-family: "Special Elite", cursive;
+  font-weight: bolder;
+}

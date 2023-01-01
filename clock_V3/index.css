@@ -1,0 +1,48 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    display: flex;
+}
+
+.time h1 {
+    padding: 0 10px;
+}
+
+.date {
+    display: flex;
+}
+
+.date h1 {
+    padding: 0 10px;
+}
+
+.day {
+    display: flex;
+}
+
+.day h1 {
+    padding: 0 10px;
+}
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+button {
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
