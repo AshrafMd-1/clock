@@ -1,3 +1,3 @@
-# AshrafMd-1.github.io
+# isometric.github.io
 
 A website that contains clocks
