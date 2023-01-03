@@ -1,12 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
 body {
     margin: 0;
     padding: 0;
+    background-color: #000;
+}
+
+/*#act-month{*/
+/*width:190px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*#act-second{*/
+/*    width: 150px;*/
+/*    text-align: center;*/
+/*}*/
+
+
+.btn {
+    flex: 1 1 auto;
+    margin: 15px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1s;
+    background-size: 200% auto;
+    color: purple;
+    /*text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #8c47de;
+    border-radius: 10px;
+}
+
+.btn:hover {
+
+    font-size: 20px;
+    background-position: right center; /* change the direction of the change here */
+}
+
+.btn-2 {
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+
+
+nav {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+
+}
+
+nav h1:hover {
+
+    color: #8c47de;
 }
 
 main {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ph {
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.act {
+    font-family: 'Seymour One', sans-serif;
+    padding: 5px;
+    color: #fff;
+    transition: all 1s;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.act:hover {
+    font-size: 3em;
 }
 
 .time {
@@ -46,3 +136,59 @@ button {
     border: 2px solid #000;
     border-radius: 5px;
 }
+
+.clock {
+    --borderWidth: 5px;
+    background: #1D1615;
+    position: relative;
+    letter-spacing: 0.3em;
+    padding: 10px;
+    /*width: 500px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: var(--borderWidth);
+}
+
+.clock h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clock h1 span {
+    padding: 0 10px;
+}
+
+.clock:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    overflow: auto;
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+

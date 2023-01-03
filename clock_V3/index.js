@@ -107,9 +107,9 @@ function changeDay(now) {
     if (isDayString) {
         DAY_EL.innerHTML = WEEK_DAYS[now.getDay()];
     } else if (isSingleDigit) {
-        DAY_EL.innerHTML = `${now.getDate()}`;
+        DAY_EL.innerHTML = `${(now.getDay()) % 7}`;
     } else {
-        DAY_EL.innerHTML = unitFormat(now.getDay() + 1);
+        DAY_EL.innerHTML = unitFormat((now.getDay()) % 7);
     }
 }
 
